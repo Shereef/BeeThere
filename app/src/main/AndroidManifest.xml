@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.shereef.beethere">
 
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Duh! -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Checking for Internet, Required by Google Drive -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Get user accounts for google drive -->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

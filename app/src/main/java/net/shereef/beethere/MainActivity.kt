@@ -1,5 +1,6 @@
 package net.shereef.beethere
 
+import android.content.Intent
 import android.os.Bundle
 import android.provider.Settings
 import android.support.v7.app.AppCompatActivity
@@ -57,6 +58,13 @@ class MainActivity : AppCompatActivity() {
           else
           take the user to the login screen
         */
+        var intent :Intent
+        if (true) {
+            intent = Intent(this, LandingActivity::class.java)
+        } else {
+            intent = Intent(this, LoginActivity::class.java)
+        }
+        startActivity(intent)
         finish()
     }
 }

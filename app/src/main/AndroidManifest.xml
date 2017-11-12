@@ -4,8 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Duh! -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Checking for Internet, Required by Google Drive -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- Get user accounts for google drive -->
-
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- Get user accounts for google drive -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,10 +21,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="io.fabric.ApiKey"
-            android:value="017aa4f44ec899b55fb9ba9b644e64f800890a12"
-            />
+            android:value="017aa4f44ec899b55fb9ba9b644e64f800890a12" />
+
+        <activity
+            android:name=".LandingActivity"
+            android:label="@string/title_activity_landing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.shereef.beethere.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

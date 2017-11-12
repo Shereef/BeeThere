@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "457368595886",
+    "firebase_url": "https://spatial-garden-185722.firebaseio.com",
+    "project_id": "spatial-garden-185722",
+    "storage_bucket": "spatial-garden-185722.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457368595886:android:8a2a2eaada71a13b",
+        "android_client_info": {
+          "package_name": "net.shereef.beethere"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457368595886-2e18db2uchje0p71v5mpq9fon7nkafq7.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "457368595886-q402ls41fdpkj1a6t0eu6dg30ush35mf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.shereef.beethere",
+            "certificate_hash": "e1056b2ac9bf23e8c29df2eac48cba10abc8c531"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf7dlIijCpzDqojmCQhzHWqbbjpvhK7jo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457368595886-2e18db2uchje0p71v5mpq9fon7nkafq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

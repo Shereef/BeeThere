@@ -1,0 +1,71 @@
+;; 
+;; Domain:     beethereandroid.com
+;; Exported:   2017-11-12 16:02:13
+;; 
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;; 
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;; 
+;; http://www.isc.org/
+;; 
+;; And RFC 1035:
+;; 
+;; http://www.ietf.org/rfc/rfc1035.txt
+;; 
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;; 
+;; Use at your own risk.
+$ORIGIN .
+@	3600	IN	SOA	beethereandroid.com.	root.beethereandroid.com.	(
+		2026216913	; serial
+		7200		; refresh
+		3600		; retry
+		86400		; expire
+		3600)		; minimum
+
+
+
+;; NS Records (YOU MUST CHANGE THIS)
+beethereandroid.com.	300	IN	NS	REPLACE&ME$WITH^YOUR@NAMESERVER.
+
+;; MX Records
+beethereandroid.com.	300	IN	MX	20	mx2.zoho.com.
+beethereandroid.com.	300	IN	MX	10	mx.zoho.com.
+
+;; TXT Records
+beethereandroid.com.	300	IN	TXT	"v=spf1 include:zoho.com ~all"
+beethereandroid._domainkey.beethereandroid.com.	300	IN	TXT	"v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRC/7GHWZWqlzmrlz20cXvDzTcP9n8ykWLBywE4jkcc0xpuJaTtVWKPLjYKUgbHq2cp63AiqYphzRVN+HWeFn6TuiT4dwJFLSLE8Ib7QU4ZE/XVtNWit2B0UfiuApxhyKSHvlYy4/VWLcWdBF65VzI7pylWrzHpopEyo61DfwZgQIDAQAB"
+
+;; CNAME Records
+dir.beethereandroid.com.	300	IN	CNAME	beethereandroid.com.
+ftp.beethereandroid.com.	300	IN	CNAME	beethereandroid.com.
+calendar.beethereandroid.com.	300	IN	CNAME	ghs.google.com.
+home.beethereandroid.com.	300	IN	CNAME	lennox.duckdns.org.
+docs.beethereandroid.com.	300	IN	CNAME	ghs.google.com.
+blog.beethereandroid.com.	300	IN	CNAME	beethereandroid.com.
+git.beethereandroid.com.	300	IN	CNAME	bitbucket.org.
+imap.beethereandroid.com.	300	IN	CNAME	imappro.zoho.com.
+local.beethereandroid.com.	300	IN	CNAME	beethereandroid.slyip.com.
+info.beethereandroid.com.	300	IN	CNAME	beethereandroid.com.
+pop.beethereandroid.com.	300	IN	CNAME	poppro.zoho.com.
+lennox.beethereandroid.com.	300	IN	CNAME	lennox.duckdns.org.
+mail.beethereandroid.com.	300	IN	CNAME	business.zoho.com.
+smtp.beethereandroid.com.	300	IN	CNAME	smtp.zoho.com.
+www.beethereandroid.com.	300	IN	CNAME	beethereandroid.com.
+zb15014388.beethereandroid.com.	300	IN	CNAME	zmverify.zoho.com.
+
+;; A Records (IPv4 addresses)
+*.vpsde.beethereandroid.com.	300	IN	A	78.46.192.17
+*.vps.beethereandroid.com.	300	IN	A	78.46.192.17
+beethereandroid.com.	300	IN	A	108.167.161.54
+vps.beethereandroid.com.	300	IN	A	78.46.192.17
+vpsde.beethereandroid.com.	300	IN	A	78.46.192.17
+vpn.beethereandroid.com.	300	IN	A	78.46.192.17
